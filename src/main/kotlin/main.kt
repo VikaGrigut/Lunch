@@ -15,15 +15,15 @@ fun main() {
     val bill = intArrayOf(2, 4, 6)
     val k = bill[2]
     val b = 6
-    differenceOfBills(bill, k, b)
+    differenceOfBills(bill, k, b.toDouble())
 }
 
-fun differenceOfBills(bill: IntArray, k:Int, b:Int):Int{
-    val wrongRes = bill.sum()/2
-    val rightRes = (bill.sum() - k)/2
+fun differenceOfBills(bill: IntArray, k:Int, b:Double):Double{
+    val wrongRes = bill.sum().toDouble()/2
+    val rightRes = (bill.sum() - k).toDouble()/2
     if (b == rightRes){
         println("Приятного аппетита")
-        return 0
+        return 0.0
     }
     else{
         println("Брайн должен " + (wrongRes-rightRes))
