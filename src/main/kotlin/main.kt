@@ -19,15 +19,13 @@ fun main() {
 }
 
 fun differenceOfBills(bill: IntArray, k:Int, b:Double):Double{
-    val wrongRes = bill.sum().toDouble()/2
     val rightRes = (bill.sum() - k).toDouble()/2
     if (b == rightRes){
         println("Приятного аппетита")
         return 0.0
     }
     else{
-        println("Брайн должен " + (wrongRes-rightRes))
-        return wrongRes-rightRes
+        println("Брайн должен " + (b-rightRes))
+        return b-rightRes
     }
-    //print(rightRes)
 }

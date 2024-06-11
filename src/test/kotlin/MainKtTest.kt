@@ -33,4 +33,14 @@ internal class MainKtTest {
         val result = differenceOfBills(bill, k, b)
         assertEquals(expected.toDouble(),result)
     }
+
+    @Test
+    fun differenceOfBills4() {
+        val bill = intArrayOf(3, 10, 2, 9, 18, 25, 45)
+        val k = bill[4]
+        val b = 69.0
+        val expected = 22
+        val result = differenceOfBills(bill, k, b)
+        assertEquals(expected.toDouble(),result)
+    }
 }
